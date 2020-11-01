@@ -250,7 +250,7 @@ namespace PAC_Sheets
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("PAC Sheets v1.15" + Environment.NewLine + "Author: Tomas Humplik" + Environment.NewLine + "Date: 27/10/2020" + Environment.NewLine + Environment.NewLine + "Please report issues and new ideas to tomhum3365@gmail.com." + Environment.NewLine + Environment.NewLine + 
+            MessageBox.Show("PAC Sheets v1.29" + Environment.NewLine + "Author: Tomas Humplik" + Environment.NewLine + "Date: 27/10/2020" + Environment.NewLine + Environment.NewLine + "Please report issues and new ideas to tomhum3365@gmail.com." + Environment.NewLine + Environment.NewLine + 
                 "If you realy like this app please make a donation by going to Help->Donate." + Environment.NewLine + "Thank you", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 

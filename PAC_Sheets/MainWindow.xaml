@@ -5,22 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PAC_Sheets"
         mc:Ignorable="d"
-        Title="Trend PAC Sheets" Height="450" Width="691.439" Icon="t_icon_TH.ico">
+        Title="Trend PAC Sheets" Height="450" Width="691.439" Icon="t_icon_TH.ico"  >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="12*"/>
-            <ColumnDefinition Width="615*"/>
+            <ColumnDefinition Width="364*"/>
+            <ColumnDefinition Width="251*"/>
             <ColumnDefinition Width="46*"/>
             <ColumnDefinition Width="11*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="SelectButton" Content="Select .IQ Files" HorizontalAlignment="Left" Margin="449,33,0,0" VerticalAlignment="Top" Width="201" Click="SelectButton_Click" Grid.Column="1" Grid.ColumnSpan="2" TabIndex="2"/>
-        <Button x:Name="createButton" Content="Create PAC Sheets" HorizontalAlignment="Left" Margin="449,65,0,0" VerticalAlignment="Top" Width="201" Click="createButton_Click" Grid.Column="1" Grid.ColumnSpan="2" TabIndex="3"/>
-        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="23" Margin="115,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.Column="1" TabIndex="0"/>
+        <Button x:Name="SelectButton" Content="Select .IQ Files" HorizontalAlignment="Left" Margin="85,33,0,0" VerticalAlignment="Top" Width="201" Click="SelectButton_Click" Grid.Column="2" Grid.ColumnSpan="2" TabIndex="2"/>
+        <Button x:Name="createButton" Content="Create PAC Sheets" HorizontalAlignment="Left" Margin="85,65,0,0" VerticalAlignment="Top" Width="201" Click="createButton_Click" Grid.Column="2" Grid.ColumnSpan="2" TabIndex="3"/>
+        <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="23" Margin="115,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.Column="1" TabIndex="0" Grid.ColumnSpan="2"/>
         <Label x:Name="label" Content="Engineer's Name: " HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="siteTextBox" HorizontalAlignment="Left" Height="23" Margin="115,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.Column="1" TabIndex="1"/>
+        <TextBox x:Name="siteTextBox" HorizontalAlignment="Left" Height="23" Margin="115,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" Grid.Column="1" TabIndex="1" Grid.ColumnSpan="2"/>
         <Label x:Name="label_Copy" Content="Site: " HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
 
-        <DockPanel Grid.ColumnSpan="4" Margin="0,0,-0.334,-0.333">
+        <DockPanel Grid.ColumnSpan="5" Margin="0,0,-0.334,-0.333">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="_File">
                     <MenuItem Header="_Settings" x:Name="Settings" Click="Settings_Click"/>
@@ -37,7 +38,7 @@
             <ScrollViewer Name="MyScrollViewer" Margin="0,81,0,0">
                 <Grid>
                     <Grid.Resources>
-                        <ImageBrush x:Key="img" ImageSource="D:\Personal\Visual Studio 2019\Projects\PAC_Sheets\PAC_Sheets\Pacman-Logo.png" Opacity="0.05"></ImageBrush>
+                        <ImageBrush x:Key="img" ImageSource="Pacman-Logo.png" Opacity="0.05"></ImageBrush>
                     </Grid.Resources>
 
                     <TextBox x:Name="directoriesTextBox" Background="{StaticResource img}" Margin="10" SelectionOpacity="0.4" IsReadOnly="True" />
